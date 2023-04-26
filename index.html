@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ -->    <link rel="stylesheet" href="css/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__body">
+                    <div class="header__title">
+                        Исследования Новой Земли в XVIII-XIX вв.
+                    </div>
+                    <div class="header__imgs">
+                        <a href="#" class="header__img" onclick="roz()" my-title="Ф.Ф. Размыслов">
+                            <img src="img/rozmislov.jpg" alt="">
+                        </a>
+                        <a href="#" onclick="litke()" class="header__img" my-title="Ф.П. Литке"  id="arh2">
+                            <img src="img/litke.jpg" alt="">
+                        </a>
+                        <a href="/" class="header__img-svg">
+                            <img src="img/rose_blue.svg" alt="">
+                        </a>
+                        <a href="#" onclick="paht()" class="header__img" my-title="П.К. Пахтусов" id="arh1">
+                            <img src="img/pahtusov.jpg" alt="">
+                        </a>
+                        <a href="#" class="header__img" onclick="civ()" my-title="А.К. Циволька">
+                            <img src="img/civolka.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__info" id="text">
+                        Архипелаг Новая Земля находится в том месте, где встречаются два арктических моря - Баренцево и Карское. Протяженность архипелага - около тысячи километров. <br> Главные острова разделены нешироким проливом под названием Маточкин Шар. С середины XVI века интерес к островам проявили европейцы. <br> В середине XVII века для исследования Новой Земли подключились русские. Их интересовало наличие полезных ископаемых, в частности серебра. Найти его поручили двум отважным мореходам – Роману Неплюеву и Ивану Неклюдову. Экспедиции были обречены на провал, практически никто из ее участников не вернулся домой. <br> В XVIII-XIX веке начинается новый этап в освоении и изучении загадочных островов.
+                        <div class="header__legend header__legend-civ">
+                            <div class="header__1exp">
+                                <p>Экспедиция П.К. Пахтусова и А.К. Цивольки</p>
+                            </div>
+                            <div class="header__2exp">
+                                <p>Территории, исследованные А.К. Циволькой</p>
+                            </div>
+                            <div class="header__legend-icon">
+                                <img src="./img/flag1.svg" alt="">
+                                <p>г. Архангельск</p>
+                            </div>
+                            <div class="header__legend-icon">
+                                <img src="./img/rudder.svg" alt="">
+                                <p>Опорные точки машрута</p>
+                            </div>
+                            <div class="header__legend-icon">
+                                <img src="./img/church.svg" alt="">
+                                <p>Место захоронения А.К. Цивольки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+          <div class="page__map map">
+            <div class="map__container _container">
+              <div id="map">
+
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet-omnivore.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-load.js"></script>
+</body>
+</html>
