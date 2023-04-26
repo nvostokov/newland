@@ -42,7 +42,7 @@ let customLayer = L.geoJson(null, {
     layer.bindPopup(feature.properties.name);
 }
 });
-omnivore.kml('/kml/nz.kml', null, customLayer).addTo(map);
+omnivore.kml('./kml/nz.kml', null, customLayer).addTo(map);
 
 
 
