@@ -14,7 +14,7 @@ function paht() {
         layer.bindPopup(feature.properties.name);
     }
     });
-    omnivore.kml('./kml/pahtusov_1.kml', null, customLayer).addTo(map);
+    omnivore.kml('/kml/pahtusov_1.kml', null, customLayer).addTo(map);
 
     let customLayer2 = L.geoJson(null, {
       style: function(feature) {
@@ -27,7 +27,7 @@ function paht() {
         layer.bindPopup(feature.properties.name);
     }
     });
-    omnivore.kml('./kml/pahtusov_2.kml', null, customLayer2).addTo(map);
+    omnivore.kml('/kml/pahtusov_2.kml', null, customLayer2).addTo(map);
 
     let img_url = './img/krotov.jpg';
     
@@ -99,7 +99,7 @@ function litke() {
       layer.bindPopup(feature.properties.name);
     }
     });
-    omnivore.kml('./kml/lit1.kml', null, customLayer).addTo(map); 
+    omnivore.kml('/kml/lit1.kml', null, customLayer).addTo(map); 
 
     let customLayer2 = L.geoJson(null, {
       style: function(feature) {
@@ -112,7 +112,7 @@ function litke() {
         layer.bindPopup(feature.properties.name);
       }
       });
-      omnivore.kml('./kml/lit2.kml', null, customLayer2).addTo(map); 
+      omnivore.kml('/kml/lit2.kml', null, customLayer2).addTo(map); 
 
       let customLayer3 = L.geoJson(null, {
         style: function(feature) {
@@ -125,7 +125,7 @@ function litke() {
           layer.bindPopup(feature.properties.name);
         }
         });
-        omnivore.kml('./kml/lit3.kml', null, customLayer3).addTo(map); 
+        omnivore.kml('/kml/lit3.kml', null, customLayer3).addTo(map); 
 
         let customLayer4 = L.geoJson(null, {
           style: function(feature) {
@@ -138,7 +138,7 @@ function litke() {
             layer.bindPopup(feature.properties.name);
           }
           });
-          omnivore.kml('./kml/lit4.kml', null, customLayer4).addTo(map); 
+          omnivore.kml('/kml/lit4.kml', null, customLayer4).addTo(map); 
 
           let flag1 = L.marker([64.6528737984116, 40.58908849343494], {icon: flagIcon}).bindPopup('В 1821-1824 гг. лейтенант Ф.П.Литке возглавил четыре экспедиции на военном бриге “Новая Земля”.').addTo(map);
 
@@ -212,7 +212,7 @@ function civ() {
         layer.bindPopup(feature.properties.name);
       }
       });
-      omnivore.kml('./kml/tsiv.kml', null, customLayer).addTo(map); 
+      omnivore.kml('/kml/tsiv.kml', null, customLayer).addTo(map); 
 
       let img_url = './img/civ_church.jpg';
 
@@ -236,7 +236,7 @@ function civ() {
           layer.bindPopup(feature.properties.name);
         }
         });
-        omnivore.kml('./kml/pahtusov_2.kml', null, customLayer2).addTo(map); 
+        omnivore.kml('/kml/pahtusov_2.kml', null, customLayer2).addTo(map); 
 
         let flag1 = L.marker([64.75651714975085, 39.96217345732051], {icon: flagIcon}).bindPopup('24 июля 1834 г. экспедиция на шхуне "Кротов" и карбасе "Казаков" вышла из Архангельска. На каждом судне было по 7 человек. Пахтусов командовал "Кротовым", а Циволька — "Казаковым".').addTo(map);
 
@@ -274,7 +274,7 @@ function roz() {
       layer.bindPopup(feature.properties.name);
   }
   });
-  omnivore.kml('./kml/roz.kml', null, customLayer).addTo(map);
+  omnivore.kml('/kml/roz.kml', null, customLayer).addTo(map);
 
   
   let rudder = L.marker([73.3087871, 54.3546662], {icon: rudderIcon}).bindPopup('Летом 1769, несмотря на потерю большей части людей и крайне плохое состояние судна, Розмыслов добрался до настоящего устья Маточкина Шара, но, за невозможностью плыть далее, должен был вернуться в Архангельск. Результатом его работ была опись Маточкина Шара. Ещё летом 1897 г. английские путешественники открыли следы зимовья Розмыслова в Белужьей губе.').addTo(map);
